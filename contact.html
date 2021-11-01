@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!--------------------------------- Header section start  ------------------------------------------>
+    <header id="header" class="header">
+        <div class="container">
+            <!-- Header center -->
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                    <div class="header-top-left">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo.png" title="Your Store" alt="Your Store">
+                                <h4 class="logo-text">Online Shop</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-10 col-md-6 col-sm-12 col-12">
+                    <div class="header-top">
+                        <!-- Search -->
+                        <div class="nav-search top-left">
+                            <div class="nav-search-box input-group form-group">
+                                <div class="select_category">
+                                    <select name="category_id">
+                                        <option value="0">All Categories</option>
+                                        <option value="78">Apparel</option>
+                                        <option value="77">Cables &amp; Connectors</option>
+                                        <option value="82">Cameras &amp; Photo</option>
+                                        <option value="80">Flashlights &amp; Lamps</option>
+                                        <option value="81">Mobile Accessories</option>
+                                        <option value="79">Video Games</option>
+                                        <option value="20">Jewelry &amp; Watches</option>
+                                        <option value="76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earings</option>
+                                        <option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wedding Rings
+                                        </option>
+                                        <option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men Watches
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="search-box">
+                                    <input class="autosearch-input form-control" type="text" value="" size="50"
+                                        autocomplete="off" placeholder="Keyword here..." name="search">
+                                    <button type="submit" class="button-search" name="submit_search"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //end Search -->
+                        <div class="top-right">
+                            <div class="wish-list">
+                                <a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) "><i
+                                        class="fa fa-heart"></i></a>
+                            </div>
+                            <!--cart-->
+                            <div class="shopping_cart">
+                                <span class="icon">
+                                    <i class="fa fa-shopping-bag"></i>
+                                </span>
+                                <div class="cart-inner">
+                                    <p class="text">
+                                        My cart
+                                    </p>
+                                    <span class="total-shopping-cart cart-total-full">
+                                        <span class="items_cart">02</span>
+                                        <span class="cart_price">( $162.00 )</span>
+                                    </span>
+                                </div>
+                                <div class="custom-dropdown-menu">
+                                    <ul>
+                                        <li class="d-flex">
+                                            <a href="#">
+                                                <div class="img-box"><img src="assets/images/products/bag5.jpg" alt=""
+                                                        width="50" height="50"></div>
+                                                <strong><span>1x women bag</span>$90.00</strong>
+                                            </a>
+                                            <a href="#0" class="action"><i class="ti-trash"></i></a>
+                                        </li>
+                                        <li class="d-flex">
+                                            <a href="#">
+                                                <div class="img-box"><img src="assets/images/products/bag3.jpg" alt=""
+                                                        width="50" height="50"></div>
+                                                <strong><span>1x stylish women bag</span>$110.00</strong>
+                                            </a>
+                                            <a href="#0" class="action"><i class="ti-trash"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="total">
+                                        <div class="price">
+                                            <strong>Total</strong><span>$200.00</span>
+                                        </div>
+                                        <div class="btn-box d-flex justify-content-between">
+                                            <a href="cart.html" class="c-btn outline">View Cart</a>
+                                            <a href="checkout.html" class="c-btn">Checkout</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//cart-->
+                            <div class="mobile-button-trigger" id="mobile-button-trigger">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Bottom -->
+                    <div class="header-bottom">
+                        <!-- Main menu -->
+                        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+                        <nav class="menu" id="menu">
+                            <div class="mobile-menu-head">
+                                <div class="go-back" id="mobile-menu-go-back"><i class="fa fa-angle-left"
+                                        aria-hidden="true"></i></div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close" id="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="main-menu" id="main-menu">
+                                <li>
+                                    <div class="menu-name">
+                                        <a href="index.html">Home</a>
+                                    </div>
+                                </li>
+
+                                <li class="menu-item-has-child">
+                                    <div class="menu-name">
+                                        <a href="shop.html">Shop</a>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sub-menu mega-menu mega-menu-column-4">
+                                        <div class="column column-1">
+                                            <h4 class="heading">Men's Fasion</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                            <h4 class="heading">Men's Beauty</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column column-2">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                            <h4 class="heading">Women's Beauty</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="column column-3">
+                                            <h4 class="heading">Children Toy</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                            <h4 class="heading">Baby Care</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="column column-4">
+                                            <img src="assets/image/pic_032.jpg" alt="">
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="menu-item-has-child">
+                                    <div class="menu-name">
+                                        <a href="#">New</a>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sub-menu mega-menu mega-menu-column-4">
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner1.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner2.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner3.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner4.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-name">
+                                        <a href="faq.html">faq</a>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-child">
+                                    <div class="menu-name">
+                                        <a href="about.html">About</a>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">adrress</a></li>
+                                            <li><a href="#">Shop Details </a></li>
+                                            <li><a href="#"> Customer Support </a></li>
+                                            <li><a href="#"> User Info </a> </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-name">
+                                        <a class="active" href="contact.html">Contact</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-name">
+                                        <a href="privacy.html">Privacy</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Main menu -->
+                        <div class="header-bottom-left">
+                            <ul class="header-bottom-left-items">
+                                <!-- <li class="login"> <a class="link-lg" href="login.html"><i class="fa fa-lock"></i> Login
+                                        or</a> <a href="register.html">Register</a></li> -->
+                                <li class="user-name"><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        Rofig Ali</a>
+
+                                    <div class="custom-dropdown-menu">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Your
+                                            Accunt</a>
+                                        <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Your Wishlist</a>
+                                        <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Your
+                                            Orders</a>
+                                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout now</a>
+                                    </div>
+
+                                </li>
+                                <li><a href="#"><i class="fa fa-truck"></i>track your order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--------------------------------- Header section  end ------------------------------------------>
+
+
+
+    <section class="page-title my-2">
+        <div class="breadcrumb-area">
+            <div class="container-fluid">
+                <div class="breadcrumb-content text-center">
+                    <h1 class="title">Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home </a>
+                        </li>
+                        <li class="active"> Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------- Contact Us Start  ------------------->
+
+    <div class="section section-margin">
+        <div class="container">
+            <div class="row mb-n10">
+                <div class="col-12 col-lg-8">
+                    <!-- Section Title Start -->
+                    <div class="section-title mb-5">
+                        <h2 class="title pb-3">Get In Touch</h2>
+                        <span class="small-border"></span>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <!-- Section Title End -->
+                    <!-- Contact Form Wrapper Start -->
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item" type="text" placeholder="Your Name *"
+                                                    name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item" type="email" placeholder="Email *"
+                                                    name="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item" type="text" placeholder="Subject *"
+                                                    name="subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-item mb-8">
+                                                <textarea class="textarea-item" name="message"
+                                                    placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" id="submit" name="submit" class="btn btn-dark">Send A
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact Form Wrapper End -->
+                </div>
+                <div class="col-12 col-lg-4">
+                    <!-- Section Title Start -->
+                    <div class="section-title mb-5">
+                        <h2 class="title pb-3">Contact Info</h2>
+                        <span class="small-border"></span>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <!-- Section Title End -->
+
+                    <!-- Contact Information Start -->
+                    <div class="contact-wrapper">
+
+                        <div class="contact-info">
+                            <div class="head-title">
+                                <i class="fa fa-map-marker"></i>
+                                <h4>Contact Address</h4>
+                            </div>
+                            <p class="desc-content">Gazipur ,Dhaka <br>Bangladesh</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="head-title">
+                                <i class="fa fa-map-marker"></i>
+                                <h4>Contact Information</h4>
+                            </div>
+                            <p class="desc-content">Mobile: 673 677 678 <br>Fax: 736 677 678 </p>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="head-title">
+                                <i class="fa fa-map-marker"></i>
+                                <h4>Customer Support</h4>
+                            </div>
+                            <p class="desc-content"><a href="#">support@demo.com</a> <br><a
+                                    href="#">Support2@demo.com</a> </p>
+                        </div>
+
+                    </div>
+                    <!--  Contact Information End -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------- Contact Us Start  ------------------->
+
+
+    <!--------------------------------- Footer Section Start ------------------------------------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#"><img width="90%" src="assets/images/logo.png" alt="image"></a>
+
+                    <div class="footer_info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+                        <ul class="footer_menu">
+                            <li class="adress">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Gazipur,Dhaka, Bangladesh
+                            </li>
+                            <li class="phone">
+                                <i class="fa fa-phone" aria-hidden="true"></i> +880 183336645
+                            </li>
+                            <li class="mail">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">demo@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-information box-footer">
+                        <h3 class="footer-head-title">Information</h3>
+                        <div class="footer-box-content">
+                            <ul class="menu">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Store Location</a></li>
+                                <li><a href="#">Policies & Rules</a></li>
+                                <li><a href="#">Online Returns Policy</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-account box-footer">
+                        <h3 class="footer-head-title">My Account</h3>
+                        <div class="footer-box-content">
+                            <ul class="menu">
+                                <li><a href="#">Account Setting</a></li>
+                                <li><a href="#">cart</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Orders Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-service box-footer">
+                        <h3 class="footer-head-title">Services</h3>
+                        <div class="footer-box-content">
+                            <ul class="menu">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer Bottom Container -->
+            <div class="footer-bottom">
+                <div class="copyright text-center mt-5">
+                    Zius Technology © 2021 Shopping Store. All Rights Reserved. Designed by Zius technology
+                </div>
+            </div>
+            <!-- /Footer Bottom Container -->
+
+        </div>
+    </footer>
+    <!--------------------------------- Footer Section Start ------------------------------------------>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

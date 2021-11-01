@@ -1,0 +1,107 @@
+@media (max-width: 1200px) {
+    .hero-slider .swiper-slide .img-box {
+        background-position: 100% center;
+        background-size: 500px;
+    }
+    .hero-slider .text-box .slider-title-big {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    .hero-slider .swiper-slide .img-box {
+        background-position: 100% center;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .header-top .top-left {
+        display: none !important;
+    }
+    .header .logo-text {
+        font-size: 19px;
+        margin-left: 27px;
+        margin-bottom: 12px;
+    }
+    .hero-slider .text-box .slider-title-big {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .hero-slider .swiper-slide .img-box {
+        background-position: 100% center;
+        background-size: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .header-top .top-left {
+        display: none !important;
+    }
+    .header .header-top {
+        justify-content: center;
+        align-items: center;
+    }
+    .header .header-bottom {
+        justify-content: center;
+    }
+    .hero-slider .swiper-slide .img-box {
+        background-position: 100% 50%;
+        background-size: 300px;
+    }
+    .feature .feature_title {
+        font-size: 16px;
+    }
+    .feature .feature_icon {
+        margin-right: 4px;
+    }
+    .feature .feature_des {
+        font-size: 10px;
+    }
+    .footer .footer-head-title {
+        margin-top: 20px;
+    }
+    .shop-top-show{
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 512px) {
+    .header .header-top .top-left {
+        display: none !important;
+    }
+    .header .header-top {
+        justify-content: center;
+        align-items: center;
+    }
+    .header .header-bottom {
+        justify-content: center;
+    }
+    .hero-slider .swiper-slide .img-box {
+        background-position: 115% 50%;
+        background-size: 300px;
+    }
+    .hero-slider .text-box .slider-title-dec {
+        font-size: 15px;
+    }
+    .hero-slider .text-box .slider-title-big {
+        font-size: 24px;
+    }
+    .hero-slider .text-box .slider-title-small {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .single-deal-product {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .single-deal-product .content {
+        width: 100%;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .shop-top-show{
+        margin-bottom: 4px;
+    }
+}

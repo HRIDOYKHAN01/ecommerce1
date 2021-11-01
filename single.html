@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+</head>
+
+<body>
+    <!--------------------------------- Header section start  ------------------------------------------>
+    <header id="header" class="header">
+        <div class="container">
+            <!-- Header center -->
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                    <div class="header-top-left">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo.png" title="Your Store" alt="Your Store">
+                                <h4 class="logo-text">Online Shop</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-10 col-md-6 col-sm-12 col-12">
+                    <div class="header-top">
+                        <!-- Search -->
+                        <div class="nav-search top-left">
+                            <div class="nav-search-box input-group form-group">
+                                <div class="select_category">
+                                    <select name="category_id">
+                                        <option value="0">All Categories</option>
+                                        <option value="78">Apparel</option>
+                                        <option value="77">Cables &amp; Connectors</option>
+                                        <option value="82">Cameras &amp; Photo</option>
+                                        <option value="80">Flashlights &amp; Lamps</option>
+                                        <option value="81">Mobile Accessories</option>
+                                        <option value="79">Video Games</option>
+                                        <option value="20">Jewelry &amp; Watches</option>
+                                        <option value="76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earings</option>
+                                        <option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wedding Rings
+                                        </option>
+                                        <option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men Watches
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="search-box">
+                                    <input class="autosearch-input form-control" type="text" value="" size="50"
+                                        autocomplete="off" placeholder="Keyword here..." name="search">
+                                    <button type="submit" class="button-search" name="submit_search"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //end Search -->
+                        <div class="top-right">
+                            <div class="wish-list">
+                                <a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) "><i
+                                        class="fa fa-heart"></i></a>
+                            </div>
+                            <!--cart-->
+                            <div class="shopping_cart">
+                                <span class="icon">
+                                    <i class="fa fa-shopping-bag"></i>
+                                </span>
+                                <div class="cart-inner">
+                                    <p class="text">
+                                        My cart
+                                    </p>
+                                    <span class="total-shopping-cart cart-total-full">
+                                        <span class="items_cart">02</span>
+                                        <span class="cart_price">( $162.00 )</span>
+                                    </span>
+                                </div>
+                                <div class="custom-dropdown-menu">
+                                    <ul>
+                                        <li class="d-flex">
+                                            <a href="#">
+                                                <div class="img-box"><img src="assets/images/products/bag5.jpg" alt=""
+                                                        width="50" height="50"></div>
+                                                <strong><span>1x women bag</span>$90.00</strong>
+                                            </a>
+                                            <a href="#0" class="action"><i class="ti-trash"></i></a>
+                                        </li>
+                                        <li class="d-flex">
+                                            <a href="#">
+                                                <div class="img-box"><img src="assets/images/products/bag3.jpg" alt=""
+                                                        width="50" height="50"></div>
+                                                <strong><span>1x stylish women bag</span>$110.00</strong>
+                                            </a>
+                                            <a href="#0" class="action"><i class="ti-trash"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="total">
+                                        <div class="price">
+                                            <strong>Total</strong><span>$200.00</span>
+                                        </div>
+                                        <div class="btn-box d-flex justify-content-between">
+                                            <a href="cart.html" class="c-btn outline">View Cart</a>
+                                            <a href="checkout.html" class="c-btn">Checkout</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//cart-->
+                            <div class="mobile-button-trigger" id="mobile-button-trigger">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Bottom -->
+                    <div class="header-bottom">
+                        <!-- Main menu -->
+                        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+                        <nav class="menu" id="menu">
+                            <div class="mobile-menu-head">
+                                <div class="go-back" id="mobile-menu-go-back"><i class="fa fa-angle-left"
+                                        aria-hidden="true"></i></div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close" id="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="main-menu" id="main-menu">
+                                <li>
+                                    <div class="menu-name">
+                                        <a class="active" href="index.html">Home</a>
+                                    </div>
+                                </li>
+
+                                <li class="menu-item-has-child">
+                                    <div class="menu-name">
+                                        <a href="shop.html">Shop</a>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sub-menu mega-menu mega-menu-column-4">
+                                        <div class="column column-1">
+                                            <h4 class="heading">Men's Fasion</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                            <h4 class="heading">Men's Beauty</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column column-2">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                            <h4 class="heading">Women's Beauty</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="column column-3">
+                                            <h4 class="heading">Children Toy</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+                                            <h4 class="heading">Baby Care</h4>
+                                            <ul>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                                <li><a href="#">Product List</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="column column-4">
+                                            <img src="assets/image/pic_032.jpg" alt="">
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="menu-item-has-child">
+                                    <div class="menu-name">
+                                        <a href="#">New</a>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sub-menu mega-menu mega-menu-column-4">
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner1.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner2.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner3.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                        <div class="column">
+                                            <img src="assets/images/banner/menu-banner4.jpg" alt="">
+                                            <h4 class="heading">Women's Fasion</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-name">
+                                        <a href="faq.html">faq</a>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-child">
+                                    <div class="menu-name">
+                                        <a href="about.html">About</a>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">adrress</a></li>
+                                            <li><a href="#">Shop Details </a></li>
+                                            <li><a href="#"> Customer Support </a></li>
+                                            <li><a href="#"> User Info </a> </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-name">
+                                        <a href="contact.html">Contact</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Main menu -->
+                        <div class="header-bottom-left">
+                            <ul class="header-bottom-left-items">
+                                <!-- <li class="login"> <a class="link-lg" href="login.html"><i class="fa fa-lock"></i> Login
+                                        or</a> <a href="register.html">Register</a></li> -->
+                                <li class="user-name"><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        Rofig Ali</a>
+
+                                    <div class="custom-dropdown-menu">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Your
+                                            Accunt</a>
+                                        <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Your Wishlist</a>
+                                        <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Your
+                                            Orders</a>
+                                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout now</a>
+                                    </div>
+
+                                </li>
+                                <li><a href="#"><i class="fa fa-truck"></i>track your order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--------------------------------- Header section  end ------------------------------------------>
+
+    <div class="section section-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-0 col-md-8 offset-md-2">
+                    <!-- <div class="product-details-img" style="width: 100%;"> -->
+
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;height: 500px;" class="swiper gallerySwiper" >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+
+                      <div thumbsSlider="" class="swiper galleryThumbSwiper" style="height: 100px;">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- </div> -->
+                </div>
+                <div class="col-lg-7">
+                    <div class="product-details position-relative">
+
+                        <div class="product-head mb-3">
+                            <h2 class="product-title">Sample product</h2>
+                        </div>
+
+                        <div class="price-box mb-2">
+                            <span class="regular-price">$80.00</span>
+                            <span class="old-price"><del>$90.00</del></span>
+                        </div>
+
+                        <span class="ratings">
+                            <span class="rating-box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <span class="rating-num">(4)</span>
+                        </span>
+
+                        <div class="sku mb-3">
+                            <span>SKU: 12345</span>
+                        </div>
+
+                        <p class="desc-content mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae consequatur repellendus at assumenda alias magnam eius ab vero atque? In veniam dolor qui optio! Voluptates odit, nisi, sequi dolorum commodi assumenda exercitationem amet eum repellat natus repudiandae quae excepturi in nostrum! Tempora, quia officia. Delectus tempora provident officia iusto inventore ducimus voluptatem sapiente unde dolore, minima quo optio mollitia laboriosam dignissimos dolor ut ea dolores debitis necessitatibus cumque. Rerum nobis blanditiis id ea culpa impedit, provident quidem cupiditate eveniet, nesciunt odio ipsam. Fuga amet ad ab neque sint in corrupti esse natus culpa modi eos, recusandae magnam praesentium blanditiis suscipit, voluptatem excepturi provident ut omnis alias laboriosam atque. Quae architecto nam unde nulla iste nesciunt commodi reiciendis distinctio laboriosam.</p>
+
+                        <!-- Quantity Start -->
+                        <div class="quantity mb-5">
+                            <div class="cart-plus-minus">
+                                <input class="cart-plus-minus-box" value="1" type="text">
+                                <div class="dec qtybutton"></div>
+                                <div class="inc qtybutton"></div>
+                                <div class="dec qtybutton"><i class="fa fa-minus"></i></div>
+                                <div class="inc qtybutton"><i class="fa fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <!-- Quantity End -->
+
+                        <!-- Cart & Wishlist Button Start -->
+                        <div class="cart-wishlist-btn mb-4">
+                            <div class="add-to_cart">
+                                <a class="btn btn-outline-dark" href="cart.html">Add to cart</a>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <a class="btn btn-outline-dark" href="wishlist.html">Add to
+                                    Wishlist</a>
+                            </div>
+                        </div>
+                        <!-- Cart & Wishlist Button End -->
+
+                        <!-- Social Shear Start -->
+                        <div class="social-share">
+                            <span>Share :</span>
+                            <a href="#"><i class="fa fa-facebook-square facebook-color"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square twitter-color"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square linkedin-color"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-square pinterest-color"></i></a>
+                        </div>
+                        <!-- Social Shear End -->
+
+                    </div>
+                    <!-- Product Summery End -->
+
+                </div>
+            </div>
+
+            <div class="row section-margin">
+                <!-- Single Product Tab Start -->
+                <div class="col-lg-12 single-product-tab">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" id="home-tab" data-bs-toggle="tab"
+                                href="#connect-1" role="tab" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" href="#connect-2"
+                                role="tab" aria-selected="false">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab" href="#connect-3"
+                                role="tab" aria-selected="false">Shipping Policy</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="connect-1" role="tabpanel"
+                            aria-labelledby="home-tab">
+                            <div class="desc-content border p-3">
+                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad fugit possimus vero eos animi aspernatur laboriosam, aliquam doloribus labore sunt voluptatum delectus modi. Magnam nulla fugit minima molestiae. Minima error ad, ipsa consequuntur odit doloribus dolorum reprehenderit delectus, quasi modi dolorem aliquam optio voluptate natus esse nemo eligendi! At, ipsa quaerat incidunt nihil sed veniam vero beatae quam quos, cupiditate placeat? Quisquam aspernatur enim, hic nemo, expedita nisi officia culpa repudiandae fugit alias tempora debitis consectetur ullam iste. Alias.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorum. Deserunt aut veritatis repudiandae? Labore vitae autem nemo magni sed odit totam. Reiciendis illo odit provident eaque id eligendi ipsa suscipit ducimus tempora voluptates cum error odio, aliquam laboriosam non deleniti aliquid quos beatae? Facilis ad iusto exercitationem dicta. Nulla asperiores dicta pariatur nisi vel excepturi sunt esse. Similique quia impedit, est ullam veniam magnam, itaque ad eius amet deserunt voluptatum minus ipsum debitis doloremque optio, corporis aliquid quam numquam. Voluptatibus temporibus quidem eos ducimus? Provident eveniet aliquam dolorem vitae expedita iure, quae tenetur cum deleniti nulla reprehenderit fuga! Fuga quod harum nobis aperiam consectetur incidunt et dicta qui blanditiis hic, voluptatibus aliquam iusto voluptatem fugit obcaecati adipisci voluptate voluptas alias. In fugiat accusamus fuga maiores ea. Itaque corporis corrupti quos, vel aliquam sed maiores cupiditate praesentium error et unde.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="connect-2" role="tabpanel" aria-labelledby="profile-tab">
+                            <!-- Start Single Content -->
+                            <div class="product_tab_content  border p-3">
+                                <!-- Start Single Review -->
+                                <div class="single-review d-flex mb-4">
+
+                                    <!-- Review Thumb Start -->
+                                    <div class="review_thumb">
+                                        <img alt="review images" src="assets/images/review.jpg">
+                                    </div>
+                                    <!-- Review Thumb End -->
+
+                                    <!-- Review Details Start -->
+                                    <div class="review_details">
+                                        <div class="review_info mb-2">
+
+                                            <span class="ratings">
+                                                <span class="rating-box">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="rating-num">(4)</span>
+                                            </span>
+
+                                            <!-- Review Title & Date Start -->
+                                            <div class="review-title-date d-flex">
+                                                <h5 class="title">Rencho - </h5><span> september, 2021</span>
+                                            </div>
+                                            <!-- Review Title & Date End -->
+
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in viverra ex,
+                                            vitae vestibulum arcu. Duis sollicitudin metus sed lorem commodo, eu dapibus
+                                            libero interdum. Morbi convallis viverra erat, et aliquet orci congue vel.
+                                            Integer in odio enim. Pellentesque in dignissim leo. Vivamus varius ex sit
+                                            amet quam tincidunt iaculis.</p>
+                                    </div>
+                                    <!-- Review Details End -->
+
+                                </div>
+                                <!-- End Single Review -->
+
+                                <a class="btn btn-outline-dark" href="#">Add Review</a>
+
+                            
+                            </div>
+                            <!-- End Single Content -->
+                        </div>
+                        <div class="tab-pane fade" id="connect-3" role="tabpanel" aria-labelledby="contact-tab">
+                            <!-- Shipping Policy Start -->
+                            <div class="shipping-policy mb-n2 border p-3">
+                                <h4 class="title-3 mb-4">Shipping policy for our store</h4>
+                               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi praesentium accusamus officiis ea, atque porro possimus, earum iste sunt voluptate dolorum numquam dignissimos laborum, velit nemo voluptates voluptatibus aperiam iusto?</p>
+                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, quam! Reiciendis aspernatur cupiditate recusandae aliquam maiores dolore facilis quod ullam!</p>
+                            </div>
+                            <!-- Shipping Policy End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product Tab End -->
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--------------------------------- Footer Section Start ------------------------------------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#"><img width="90%" src="assets/images/logo.png" alt="image"></a>
+
+                    <div class="footer_info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+                        <ul class="footer_menu">
+                            <li class="adress">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Gazipur,Dhaka, Bangladesh
+                            </li>
+                            <li class="phone">
+                                <i class="fa fa-phone" aria-hidden="true"></i> +880 183336645
+                            </li>
+                            <li class="mail">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">demo@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-information box-footer">
+                        <h3 class="footer-head-title">Information</h3>
+                        <div class="footer-box-content">
+                            <ul class="menu">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Store Location</a></li>
+                                <li><a href="#">Policies & Rules</a></li>
+                                <li><a href="#">Online Returns Policy</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-account box-footer">
+                        <h3 class="footer-head-title">My Account</h3>
+                        <div class="footer-box-content">
+                            <ul class="menu">
+                                <li><a href="#">Account Setting</a></li>
+                                <li><a href="#">cart</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Orders Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-service box-footer">
+                        <h3 class="footer-head-title">Services</h3>
+                        <div class="footer-box-content">
+                            <ul class="menu">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer Bottom Container -->
+            <div class="footer-bottom">
+                <div class="copyright text-center mt-5">
+                    Zius Technology © 2021 Shopping Store. All Rights Reserved. Designed by Zius technology
+                </div>
+            </div>
+            <!-- /Footer Bottom Container -->
+
+        </div>
+    </footer>
+    <!--------------------------------- Footer Section Start ------------------------------------------>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <script>
+      var swiper = new Swiper(".galleryThumbSwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".gallerySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
+</body>
+
+</html>
